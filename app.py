@@ -19,7 +19,7 @@ def generate_graph():
         time = round(i, 5)
         data_from_user[0].insert(0, time)
         prdct = model.predict(data_from_user)
-        disp = prdct[0]
+        disp = float(prdct[0])
         time_mod = round(time*1000, 2)
         disp_mod = round(disp*1000, 2)
         single_point = {
