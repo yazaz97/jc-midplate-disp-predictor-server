@@ -13,6 +13,7 @@ def generate_graph():
     body = request.get_json() 
     time_arr = np.arange(0, 0.006, 0.00003)
     data_points = []
+    print('hi')
 
     for i in time_arr:
         data_from_user = [[body["A"], body["B"], body["n"], body["C"], body["m"], body["velocity"], body["density"], body["impactor_mass"], body["length"], body["width"], body["thickness"]]]
